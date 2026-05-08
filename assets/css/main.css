@@ -770,6 +770,7 @@ h6 {
 .section {
   color: var(--default-color);
   background-color: var(--background-color);
+  padding: 60px 0;
   scroll-margin-top: 78px;
   overflow: clip;
 }
