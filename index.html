@@ -26,6 +26,12 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+  <style>
+    /* offset internal anchor targets by 50px when clicked */
+    [id] {
+      scroll-margin-top: 100px;
+    }
+  </style>
 </head>
 
 <body class="index-page">
@@ -58,10 +64,9 @@
           <ul>
             <li><a href="#hero" class="active">BERANDA</a></li>
             <li><a href="#tentang">TENTANG KAMI</a></li>
-            <li><a href="#potensi">POTENSI</a></li>
-            <li><a href="#development">DEVELOPMENT</a></li>
-            <li><a href="#peserta">PESERTA</a></li>
-            <li><a href="#pelayanan">PELAYANAN</a></li>
+            <li><a href="#sponsorship">SPONSORSHIP</a></li>
+            <li><a href="#kegiatan">KEGIATAN</a></li>
+            <li><a href="#timeline">TIMELINE</a></li>
           </ul>
           <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>
@@ -75,17 +80,18 @@
   <main class="main">
 
     <!-- Hero Section -->
-    <section id="hero" class="hero section light-background">
+    <section id="hero" class="hero light-background">
+      <img src="assets/img/Beranda/hero.jpeg" alt="" class="img-fluid">
 
       <div class="container">
         <div class="row gy-4">
-          <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center" data-aos="zoom-out">
+          <!-- <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center" data-aos="zoom-out">
             <h1>BANGUN <span>DESA</span> <br>BANGUN<span> INDONESIA</span></h1>
             <br>
             <div class="d-flex">
               <a href="https://youtu.be/OO2kPK5-qno?si=oLm9Xfp03-DurHO4" class="btn-get-started glightbox"><i class="bi bi-play-circle"></i> Tonton Video</a>
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
 
@@ -94,7 +100,7 @@
 
 
     <!-- About Section -->
-    <section id="tentang" class="about section light-background">
+    <section id="tentang" class="about section">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
@@ -576,11 +582,11 @@ Exposure media yang merata dari pra event,event & pasca event.</p>
     </section><!-- /Team Section -->
 
     <!-- Services Section -->
-    <section id="pelayanan" class="services section">
+    <section id="sponsorship" class="services section">
 
       <!-- Section Title -->
       <div class="container section-title">
-        <h2>Pelayanan</h2>
+        <h2>Sponsorship</h2>
         <p><span>Layanan</span> <span class="description-title">Sponsorship</span></p>
       </div><!-- End Section Title -->
           <div class="container">
@@ -729,21 +735,21 @@ Exposure media yang merata dari pra event,event & pasca event.</p>
         <!-- Contact Section -->
     <section id="produk" class="contact section">
 
-      <div class="container" data-aos-delay="100">
+      <div class="container">
 
         <div class="row gy-4">
 
           <div class="col-lg-5">
 
             <div class="info-wrap">
-              <div class="info-item d-flex" data-aos-delay="200">
+              <div class="info-item d-flex">
                 <div>
                   <h3>Stand Pameran</h3>
                   <p>lorem ipsum dolor sit amet</p>
                 </div>
               </div><!-- End Info Item -->
 
-              <div class="info-item d-flex" data-aos-delay="300">
+              <div class="info-item d-flex">
                 <i class="bi bi-cash flex-shrink-0"></i>
                 <div>
                   <h3>Rp. 25.000.000</h3>
@@ -761,7 +767,7 @@ Exposure media yang merata dari pra event,event & pasca event.</p>
 
               <div class="row gy-3">
 
-                <div class="col-xl-6 col-lg-6" data-aos-delay="100">
+                <div class="col-xl-6 col-lg-6">
                   <div class="pricing-item">
                     <h3>Bronze</h3>
                     <h4><sup>Rp.</sup>200 juta<span> / brand</span></h4>
@@ -771,7 +777,7 @@ Exposure media yang merata dari pra event,event & pasca event.</p>
                   </div>
                 </div><!-- End Pricing Item -->
 
-                <div class="col-xl-6 col-lg-6" data-aos-delay="200">
+                <div class="col-xl-6 col-lg-6">
                   <div class="pricing-item featured">
                     <h3>Silver</h3>
                     <h4><sup>Rp.</sup>300 juta<span> / brand</span></h4>
@@ -781,7 +787,7 @@ Exposure media yang merata dari pra event,event & pasca event.</p>
                   </div>
                 </div><!-- End Pricing Item -->
 
-                <div class="col-xl-6 col-lg-6" data-aos-delay="400">
+                <div class="col-xl-6 col-lg-6">
                   <div class="pricing-item">
                     <h3>Gold</h3>
                     <h4><sup>Rp.</sup>500 juta<span> / brand</span></h4>
@@ -791,7 +797,7 @@ Exposure media yang merata dari pra event,event & pasca event.</p>
                   </div>
                 </div><!-- End Pricing Item -->
 
-                <div class="col-xl-6 col-lg-6" data-aos-delay="400">
+                <div class="col-xl-6 col-lg-6">
                   <div class="pricing-item">
                     <span class="advanced">Advanced</span>
                     <h3>Platinum</h3>
@@ -816,7 +822,7 @@ Exposure media yang merata dari pra event,event & pasca event.</p>
     </section><!-- /Contact Section -->
 
         <!-- Pricing Section -->
-    <section id="media" class="pricing section">
+    <section class="pricing section">
 
       <!-- Section Title -->
       <div class="container section-title">
@@ -827,7 +833,7 @@ Exposure media yang merata dari pra event,event & pasca event.</p>
 
         <div class="row gy-3">
 
-          <div class="col-xl-3 col-lg-6" data-aos-delay="100">
+          <div class="col-xl-3 col-lg-6">
             <div class="pricing-item">
               <h3>Umbul Umbul</h3>
                 <img src="assets/img/Pendanaan/media.jpg" style="border:0; width: 100%; height: 230px; object-fit:contain; object-position: center;" alt="">
@@ -836,7 +842,7 @@ Exposure media yang merata dari pra event,event & pasca event.</p>
             </div>
           </div><!-- End Pricing Item -->
 
-          <div class="col-xl-3 col-lg-6" data-aos-delay="100">
+          <div class="col-xl-3 col-lg-6">
             <div class="pricing-item">
               <h3>ID Card</h3>
                 <img src="assets/img/Pendanaan/idcard.jpg" style="border:0; width: 100%; height: 230px; object-fit: contain; object-position: center;" alt="">
@@ -845,7 +851,7 @@ Exposure media yang merata dari pra event,event & pasca event.</p>
             </div>
           </div><!-- End Pricing Item -->
 
-          <div class="col-xl-3 col-lg-6" data-aos-delay="100">
+          <div class="col-xl-3 col-lg-6">
             <div class="pricing-item">
               <h3>Baju</h3>
                 <img src="assets/img/Pendanaan/baju.jpg" style="border:0; width: 100%; height: 230px; object-fit: contain; object-position: center;" alt="">
@@ -854,7 +860,7 @@ Exposure media yang merata dari pra event,event & pasca event.</p>
             </div>
           </div><!-- End Pricing Item -->
 
-          <div class="col-xl-3 col-lg-6" data-aos-delay="100">
+          <div class="col-xl-3 col-lg-6">
             <div class="pricing-item">
               <h3>Spanduk</h3>
                 <img src="assets/img/Pendanaan/spanduk.jpg" style="border:0; width: 100%; height: 230px; object-fit: contain; object-position: center;" alt="">
@@ -863,7 +869,7 @@ Exposure media yang merata dari pra event,event & pasca event.</p>
             </div>
           </div><!-- End Pricing Item -->
 
-          <div class="col-xl-12 col-lg-6" data-aos-delay="100">
+          <div class="col-xl-12 col-lg-6">
             <div class="pricing-item">
                 <img src="assets/img/Pendanaan/other.jpg" style="border:0; width: 100%; height: 100%;" alt="">
             </div>
@@ -875,7 +881,562 @@ Exposure media yang merata dari pra event,event & pasca event.</p>
 
     </section><!-- /Pricing Section -->
 
+    <section id="kegiatan" class="pricing section">
+            <!-- Section Title -->
+      <div class="container section-title">
+        <h2>Kegiatan</h2>
+        <p><span>Rangkaian</span> <span class="description-title">Kegiatan</span></p>
+      </div><!-- End Section Title -->
 
+      <div class="container service-details">
+        <div class="row gy-4 ">
+
+          <div class="col-lg-8">
+
+            <div id="pameran" class="col-lg-12">
+              <h3>Pameran</h3>
+              <img src="assets/img/Kegiatan/Picture1.jpg" id="pameran" alt="" class="img-fluid services-img">
+              <p>
+                Area di bagi menjadi 10 zonasi sesuai kategori desa.
+              </p>
+
+              
+              <div class="row">
+                <ul class="col-lg-8">
+                  <li><i class="bi bi-dot"></i> <span>Desa Pertanian & Perkebunan</span></li>
+                  <li><i class="bi bi-dot"></i> <span>Desa Pertenakan & Perikanan</span></li>
+                  <li><i class="bi bi-dot"></i> <span>Desa Wisata</span></li>
+                  <li><i class="bi bi-dot"></i> <span>Desa Industri</span></li>
+                  <li><i class="bi bi-dot"></i> <span>Desa Nelayan</span></li>
+                </ul>
+                <ul class="col-lg-4">
+                  <li><i class="bi bi-dot"></i> <span>Desa Kreatif</span></li>
+                  <li><i class="bi bi-dot"></i> <span>Desa Energi</span></li>
+                  <li><i class="bi bi-dot"></i> <span>Desa Digital</span></li>
+                  <li><i class="bi bi-dot"></i> <span>Desa Potensi Demografi</span></li>
+                  <li><i class="bi bi-dot"></i> <span>Desa Potensi Khusus</span></li>
+                </ul>
+              </div>
+            </div>
+
+            <br>
+
+            <div id="anugerah" class="col-lg-12">
+              <h3>Anugerah  Desa Indonesia (ADI)</h3>
+              <p>
+                Anugerah Desa Indonesia (ADI) adalah sebuah event penghargaan yang diberikan kepada Desa-Desa di Indonesia yang memiliki Prestasi dan potensi dengan kriteria penilaian tertentu dari Kementerian Desa, Pembangunan Daerah Tertinggal dan Transmigrasi (Kemendes PDTT).
+              </p>
+              <h5>Tujuan ADI</h5>
+              <ul>
+                  <li><i class="bi bi-dot"></i> <span>Memberikan motivasi & inspirasi bagi desa di Indonesia.</span></li>
+                  <li><i class="bi bi-dot"></i> <span>Mendorong desa untuk menggali dan mengidentifikasi potensi lokal.</span></li>
+                  <li><i class="bi bi-dot"></i> <span>Meningkatkan kesejahteraan masyarakat desa.</span></li>
+                  <li><i class="bi bi-dot"></i> <span>Meningkatkan kualitas desa dan mempromosikannya ke tingkat dunia.</span></li>
+                </ul>
+            </div>
+
+            <br>
+
+            <div id="coaching" class="col-lg-12">
+              <h3>Coaching Clinic</h3>
+              <ul>
+                  <li><i class="bi bi-dot"></i> <span>Coaching Clinic peningkatan expor UMKM unggulan.</span></li>
+                  <li><i class="bi bi-dot"></i> <span>Coaching clinic  pengemasan /packing produk yang menarik.</span></li>
+                  <li><i class="bi bi-dot"></i> <span>Coaching Clinic peningkatan kapasitan UMKM.</span></li>
+                  <li><i class="bi bi-dot"></i> <span>Pengelolaan sarang burung walet.</span></li>
+                </ul>
+            </div>
+
+            <br>
+
+            <div id="kuliner" class="col-lg-12">
+              <h3>Kuliner Nusantara</h3>
+              <img src="assets/img/Kegiatan/kuliner.jpg" id="kuliner" alt="" class="img-fluid services-img">
+              <p>
+                Menghadirkan UMKM Kuliner untuk memenuhi kebutuhan peserta dan pengunjung INDOVEX 2025, dengan mengajak komunitas kuliner yang ada di daerah Jogja maupun sekitarnya untuk menyiapkan menu-menu lokal maupun Nasional.
+              </p>
+            </div>
+
+            <br>
+
+            <div id="festival" class="col-lg-12">
+              <h3>Festival Seni Budaya Nusantara</h3>
+              <p>
+                Gelar Seni Budaya Nusantara dan Hiburan Rakyat menampilkan berbagai jenis seni budaya tradisional dan musik hiburan dengan menghadirkan grup musik dan bintang tamu.
+              </p>
+              <p>
+                Festival ini menjadi daya tarik tambahan bagi pengunjung sekaligus mempromosikan kekayaan seni dan budaya Indonesia yang berakar dari desa-desa di seluruh nusantara.
+              </p>
+            </div>
+
+            <br>
+
+            <div id="seminar" class="col-lg-12">
+              <h3>Seminar & Workshop</h3>
+              <br>
+              <div class="row">
+                <ul class="col-lg-6">
+                  <h5>Topik Seminar</h5>
+                  <li><i class="bi bi-dot"></i> <span>Strategi Pengembangan Ekonomi Desa.</span></li>
+                  <li><i class="bi bi-dot"></i> <span>Digitalisasi Desa di Era Industri 4.0.</span></li>
+                  <li><i class="bi bi-dot"></i> <span>Kebijakan dan Regulasi Terkini Pembangunan Desa.</span></li>
+                  <li><i class="bi bi-dot"></i> <span>Pemasaran Produk Desa ke Pasar Global.</span></li>
+                </ul>
+                <ul class="col-lg-6">
+                  <h5>Workshop Praktis</h5>
+                  <li><i class="bi bi-dot"></i> <span>Pengemasan Produk Desa yang Menarik.</span></li>
+                  <li><i class="bi bi-dot"></i> <span>Strategi Pemasaran Digital untuk BUMDes.</span></li>
+                  <li><i class="bi bi-dot"></i> <span>Teknik Negosiasi dengan Buyer Internasional.</span></li>
+                  <li><i class="bi bi-dot"></i> <span>Sertifikasi dan Standarisasi Produk Ekspor.</span></li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="detailkegiatan col-lg-4" style="position: sticky; top: 100px; align-self: start;">
+            <h4>Detail Kegiatan</h4>
+            <div class="services-list">
+              <a href="#pameran">Pameran</a>
+              <a href="#anugerah">Anugerah Desa Indonesia</a>
+              <a href="#coaching">Coaching Clinic</a>
+              <a href="#kuliner">Kuliner Nusantara</a>
+              <a href="#festival">Festival Seni Budaya Nusantara</a>
+              <a href="#seminar">Seminar & Workshop</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="Rencana" class="services section">
+
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-3 col-md-6">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-people"></i>
+              </div>
+                <h3>Pertemuan</h3>
+              <p>Pertemuan one-on-one antara desa dengan potential buyer.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-database-check"></i>
+              </div>
+                <h3>Business Matching</h3>
+              <p>Menghadirkan buyer dan investor potensial untuk Kerjasama jangka panjang.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-chat-dots"></i>
+              </div>
+                <h3>Negosiasi</h3>
+              <p>Negosiasi langsung untuk kerja sama jangka panjang.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-file-earmark-text"></i>
+              </div>
+                <h3>Penandatanganan MoU</h3>
+              <p>Penandatanganan MoU dengan beberapa pihak (pemerintah,swasta,bumn dan NGO).</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-building"></i>
+              </div>
+                <h3>Kolaborasi</h3>
+              <p>  PT Meisou Co.Ltd. dari Toyota ( Agent Tenaga Kerja) dengan  Pemerintah kabupaten.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-activity"></i>
+              </div>
+                <h3>Kolaborasi</h3>
+              <p>Yayasan Konsorsium Merah Putih (rekanan Kemendes untuk produksi pangan berkelanjutan).</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-droplet-half"></i>
+              </div>
+                <h3>Kolaborasi</h3>
+              <p>PT. Tokyo Delapan Indonesia (franchise pabrik pupuk hayati).</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-cpu"></i>
+              </div>
+                <h3>Kolaborasi</h3>
+              <p>PT. Clevio (penyedia sistem AI: sistem pendamping business matching Indah.ai, sistem penyuluh tani Agriana.ai).</p>
+            </div>
+          </div><!-- End Service Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Services Section -->
+
+        <!-- About Section -->
+    <section id="tentang" class="about section light-background">
+
+      <div class="container">
+
+        <div class="row gy-3">
+
+          <div class="col-lg-6">
+            <img src="assets/img/Kegiatan/ai.jpg" alt="" class="img-fluid">
+          </div>
+
+          <div class="col-lg-6 d-flex flex-column justify-content-center">
+            <div class="about-content ps-0 ps-lg-3">
+              <h3>Business Matching</h3>
+              <p>
+                Penggunaan Business Matching Host: Indah.AI
+              </p>
+              <ul>
+                <li>
+                  <i class="bi bi-clock"></i>
+                  <div>
+                    <h4>ON-BOARDING</h4>
+                    <p>Registrasi via WA, KYC, business matching, jadwalkan meeting.</p>
+                  </div>
+                </li>
+                <li>
+                  <i class="bi bi-person-check"></i>
+                  <div>
+                    <h4>PRA-ACARA</h4>
+                    <p>VIP service, akomodasi afiliasi, workshop VIP, tur lokal, notifikasi acara.</p>
+                  </div>
+                </li>
+                <li>
+                  <i class="bi bi-star"></i>
+                  <div>
+                    <h4>SAAT-ACARA</h4>
+                    <p>Panduan jadwal harian, pengingat rapat, navigasi stan pameran, catatan feedback.</p>
+                  </div>
+                </li>
+                <li>
+                  <i class="bi bi-check2-all"></i>
+                  <div>
+                    <h4>PASCA-ACARA</h4>
+                    <p>Pelacakan tindak lanjut, pengumpulan umpan balik, monitoring kolaborasi (hingga 1 bulan).</p>
+                  </div>
+                </li>
+              </ul>
+              <p>
+                INDOVEX 2025 merupakan langkah strategis dalam mewujudkan visi Pembangunan Nasional yang inklusif dan merata.
+              </p>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+
+                <!-- Services Section -->
+    <section id="Rencana" class="services section">
+      <!-- Section Title -->
+      <div class="container section-title">
+        <p><span>Bagaimana <span class="description-title">Indah.AI</span> Melayani Seluruh Peserta</span></p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-3 col-md-6">
+            <div class="service-item position-relative">
+              <div class="icon bg-primary">
+                <i class="bi bi-clock"></i>
+              </div>
+                <h3>On-Boarding</h3>
+              <p><ul class="text-start">
+                <li>Targeted Chat Invitation.</li>
+                <li>Advertisement Responder.</li>
+                <li>KYC Regist. & Event Q&A.</li>
+                <li>Upload company profile.</li>
+              </ul></p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="service-item position-relative">
+              <div class="icon bg-primary">
+                <i class="bi bi-person-check"></i>
+              </div>
+                <h3>Pra-Acara</h3>
+              <p><ul class="text-start">
+                <li><span style="color: #FFD700; font-weight: bold;">[Premium]</span> VIP Interview of Needs & Offers for Customized Biz-Matching.</li>
+                <li><span style="color: #FFD700; font-weight: bold;">[Premium]</span> Booth "Deal Room" khusus untuk transaksi dan negosiasi.</li>
+                <li><span style="color: #FFD700; font-weight: bold;">[Premium]</span> Sistem invoice & pembayaran awal di tempat.</li>
+              </ul></p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="service-item position-relative">
+              <div class="icon bg-primary">
+                <i class="bi bi-star"></i>
+              </div>
+                <h3>Saat-Acara</h3>
+              <p><ul class="text-start">
+                <li>Welcome to INDOVEX Event & Q&A.</li>
+                <li><span style="color: #FFD700; font-weight: bold;">[Premium]</span> Remind VIP Biz-Match Meetings & VIP Workshops.</li>
+                <li><span style="color: #FFD700; font-weight: bold;">[Premium]</span> Biz-Match WAG Administration & To-Do-List.</li>
+              </ul></p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="service-item position-relative">
+              <div class="icon bg-primary">
+                <i class="bi bi-check2-all"></i>
+              </div>
+                <h3>Pasca-Acara</h3>
+              <p><ul class="text-start">
+                <li><span style="color: #FFD700; font-weight: bold;">[Premium]</span> Follow-up To-Do-List.</li>
+                <li>Feedback Collecting.</li>
+                <li>Feedback Analytics.</li>
+              </ul></p>
+            </div>
+          </div><!-- End Service Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Services Section -->
+
+        <!-- Pricing Section -->
+    <section id="media" class="pricing section">
+
+      <!-- Section Title -->
+      <div class="container section-title">
+        <p><span>Layout Kuliner & Panggung</span> <span class="description-title">Hiburan</span></p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-3">
+
+          <div class="col-xl-6 col-lg-6">
+            <div class="pricing-item">
+                <img src="assets/img/Kegiatan/layout1.jpg" style="border:0; width: 100%; height: 350px;" alt="">
+            </div>
+          </div>
+
+          <div class="col-xl-6 col-lg-6">
+            <div class="pricing-item">
+                <img src="assets/img/Kegiatan/layout2.jpg" style="border:0; width: 100%; height: 350px;" alt="">
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Pricing Section -->
+
+            <!-- Pricing Section -->
+    <section id="media" class="pricing section">
+
+      <!-- Section Title -->
+      <div class="container section-title">
+        <p><span>General</span> <span class="description-title">Floorplan</span></p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-3">
+
+          <div class="col-xl-6 col-lg-6">
+            <div class="pricing-item">
+                <img src="assets/img/Kegiatan/floorplan.jpg" style="border:0; width: 100%; height: 350px;" alt="">
+            </div>
+          </div>
+
+          <div class="col-xl-6 col-lg-6">
+            <div class="pricing-item">
+                <img src="assets/img/Kegiatan/floorplan2.jpg" style="border:0; width: 100%; height: 350px;" alt="">
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Pricing Section -->
+
+            <!-- Featured Services Section -->
+    <section id="timeline" class="featured-services section">
+      <!-- Section Title -->
+      <div class="container section-title text-start">
+        <p><span>Timeline  2025 </span></p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-xl-3 col-md-6 d-flex">
+            <div class="service-item position-relative">
+              <div class="icon"><i class="bi bi-calendar-check icon"></i></div>
+              <h4>Agustus 2025</h4>
+              <p><ul>
+                <li>Rapat Koordinasi dengan Semua Pihak.</li>
+                <li>Penyiapan Materi & Konsep INDOVEX 2026.</li>
+                <li>Audensi dan Presentasi ke Bupati Majalengka.</li>
+              </ul></p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-xl-3 col-md-6 d-flex">
+            <div class="service-item position-relative">
+              <div class="icon"><i class="bi bi-calendar-check icon"></i></div>
+              <h4>September 2025</h4>
+              <p><ul>
+                <li>Zoom Meeting Calon Peserta dari 38 Provinsi.</li>
+                <li>Follow Up Calon Peserta & Sponsor.</li>
+                <li>Promosi INDOVEX 2026.</li>
+                <li>Surat Penunjukkan Penyelenggara.</li>
+              </ul></p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-xl-3 col-md-6 d-flex">
+            <div class="service-item position-relative">
+              <div class="icon"><i class="bi bi-calendar-check icon"></i></div>
+              <h4>Oktober 2025</h4>
+              <p><ul>
+                <li>Rapat Koordinasi dengan Semua Pihak.</li>
+                <li>Penyiapan Materi & Konsep INDOVEX 2026.</li>
+                <li>Audensi dan Presentasi ke Bupati Majalengka.</li>
+              </ul></p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-xl-3 col-md-6 d-flex">
+            <div class="service-item position-relative">
+              <div class="icon"><i class="bi bi-calendar-check icon"></i></div>
+              <h4>November 2025</h4>
+              <p><ul>
+                <li>Rapat koordinasi.</li>
+                <li>Koordinasi & survei venue.</li>
+                <li>Promosi INDOVEX 2026.</li>
+                <li>Surat Penawaran Calon Peserta & Sponsor.</li>
+              </ul></p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-xl-3 col-md-6 d-flex">
+            <div class="service-item position-relative">
+              <div class="icon"><i class="bi bi-calendar-check icon"></i></div>
+              <h4>Desember 2025</h4>
+              <p><ul>
+                <li>Rapat koordinasi.</li>
+                <li>Follow Up Kepesertaan & Sponsorship.</li>
+                <li>Finalisasi dukungan Wamen Kemendes.</li>
+              </ul></p>
+            </div>
+          </div><!-- End Service Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Featured Services Section -->
+            <!-- Featured Services Section -->
+    <section id="timeline" class="featured-services section">
+      <!-- Section Title -->
+      <div class="container section-title text-start">
+        <p><span>Timeline 2025 </span></p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-xl-3 col-md-6 d-flex">
+            <div class="service-item position-relative">
+              <div class="icon"><i class="bi bi-calendar-check icon"></i></div>
+              <h4>Januari 2026</h4>
+              <p><ul>
+                <li>Rapat koordinasi.</li>
+                <li>Follow Up Kepesertaan & Sponsorship.</li>
+                <li>Ketemu calon buyer potensial.</li>
+                <li>Promosi INDOVEX 2026.</li>
+              </ul></p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-xl-3 col-md-6 d-flex">
+            <div class="service-item position-relative">
+              <div class="icon"><i class="bi bi-calendar-check icon"></i></div>
+              <h4>Februari 2026</h4>
+              <p><ul>
+                <li>Rapat koordinasi.</li>
+                <li>Follow Up Kepesertaan & Sponsorship.</li>
+                <li>Ketemu calon buyer potensial.</li>
+                <li>Promosi  INDOVEX 2026.</li>
+              </ul></p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-xl-3 col-md-6 d-flex">
+            <div class="service-item position-relative">
+              <div class="icon"><i class="bi bi-calendar-check icon"></i></div>
+              <h4>Maret 2026</h4>
+              <p><ul>
+                <li>Tehnikal Meeting vendor & peserta.</li>
+                <li>Finalisasi Penjualan & Sponsorship.</li>
+                <li>Tehnikal Meeting dengan Venue & Hotel.</li>
+                <li>Promosi  INDOVEX 2026 Via Sosmed.</li>
+              </ul></p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-xl-3 col-md-6 d-flex">
+            <div class="service-item position-relative">
+              <div class="icon"><i class="bi bi-calendar-check icon"></i></div>
+              <h4>April 2025</h4>
+              <p><ul>
+                <li>Persiapan teknis venue.</li>
+                <li>Proses Loading Kontraktor.</li>
+                <li>Proses Loading Peserta.</li>
+                <li>Pelaksanaan Acara.</li>
+              </ul></p>
+            </div>
+          </div><!-- End Service Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Featured Services Section -->
 
   </main>
 

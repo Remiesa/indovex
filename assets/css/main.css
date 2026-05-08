@@ -61,10 +61,6 @@ a {
   transition: 0.3s;
 }
 
-a:hover {
-  color: color-mix(in srgb, var(--accent-color), transparent 25%);
-  text-decoration: none;
-}
 
 h1,
 h2,
@@ -771,11 +767,9 @@ h6 {
 /*--------------------------------------------------------------
 # Global Sections
 --------------------------------------------------------------*/
-section,
 .section {
   color: var(--default-color);
   background-color: var(--background-color);
-  padding: 60px 0;
   scroll-margin-top: 78px;
   overflow: clip;
 }
@@ -827,19 +821,16 @@ section,
 # Hero Section
 --------------------------------------------------------------*/
 .hero {
-  width: 100%;
-  min-height: 75vh;
   position: relative;
-  padding: 60px 0;
-  display: flex;
+  padding-bottom: 60px;
   align-items: center;
-  background: url("../img/Beranda/events.jpeg") center left;
-  background-size: cover;
+  background-size:cover;
+  background-repeat: no-repeat;
 }
 
 .hero:before {
   content: "";
-  background: color-mix(in srgb, var(--default-color), transparent 60%);
+  /* background: color-mix(in srgb, var(--default-color), transparent 95%); */
   position: absolute;
   bottom: 0;
   top: 0;
@@ -994,18 +985,6 @@ section,
   font-size: 14px;
   margin-bottom: 0;
   transition: ease-in-out 0.3s;
-}
-
-.featured-services .service-item:hover h4 a,
-.featured-services .service-item:hover .icon i,
-.featured-services .service-item:hover p {
-  color: var(--contrast-color);
-}
-
-.featured-services .service-item:hover:before {
-  background: var(--accent-color);
-  inset: 0;
-  border-radius: 0px;
 }
 
 /*--------------------------------------------------------------
