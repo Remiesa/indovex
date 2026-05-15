@@ -47,9 +47,11 @@
         <i class="bi bi-envelope d-flex align-items-center">
           <a href="mailto:kinaryacipta01@gmail.com">kinaryacipta01@gmail.com</a>
         </i>
-        <i class="bi bi-phone d-flex align-items-center ms-4">
-          <span>+62 813 9000 4884</span>
-        </i>
+        <div class="lang-switcher">
+          <button class="lang-btn active" id="btnIND" onclick="setLang('id')">IND</button>
+          <div class="lang-divider"></div>
+          <button class="lang-btn" id="btnENG" onclick="setLang('en')">ENG</button>
+        </div>
       </div>
       <div class="social-links d-none d-md-flex align-items-center">
         <a href="https://kinaryaciptakreasi.com/"><i class="bi bi-info-circle"></i></a>
@@ -57,11 +59,7 @@
         <a href="https://www.instagram.com/kinaryakreasi/"><i class="bi bi-instagram"></i></a>
 
         <!-- Language Switcher -->
-        <div class="lang-switcher">
-          <button class="lang-btn active" id="btnIND" onclick="setLang('id')">IND</button>
-          <div class="lang-divider"></div>
-          <button class="lang-btn" id="btnENG" onclick="setLang('en')">ENG</button>
-        </div>
+        
       </div>
     </div>
   </div><!-- End Top Bar -->
