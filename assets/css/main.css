@@ -824,6 +824,7 @@ h6 {
   position: relative;
   padding-bottom: 60px;
   align-items: center;
+  text-align: center;
   background-size:cover;
   background-repeat: no-repeat;
 }
